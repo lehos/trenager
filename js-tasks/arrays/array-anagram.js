@@ -5,12 +5,11 @@
 
 function arrayAnagram(arr) {
     let result = []
-    let sorted = arr.map((elem) => elem.split('').sort().join(''))
+    let sorted = arr.map(elem => elem.split('').sort().join(''))
     //storage for second anagram indexes, to exclude them in next iterations
     let trash = []
 
     arr.forEach((elem, i) => {
-        // if we're iterating over second anagram - quit
         if (trash.indexOf(i) != -1) {
             return
         }
@@ -23,9 +22,7 @@ function arrayAnagram(arr) {
             return
         }
 
-        // remember used anagrams to exclude them in next iterations
         trash.push(j)
-
         result.push([elem, arr[j]])
     })
     return result
