@@ -7,7 +7,7 @@ function arrayAnagram(arr) {
     let result = []
     // helper array where each elem is sorted, so anagram elems are equal here
     let sorted = arr.map(elem => elem.split('').sort().join(''))
-    //storage for second anagram indexes, to exclude them in next iterations
+    //storage for indexes of second anagrams, to exclude them in next iterations
     let trash = []
 
     arr.forEach((elem, i) => {
