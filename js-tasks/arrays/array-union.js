@@ -1,14 +1,16 @@
-//Даны два массива целых чисел, найдите общие элементы.
+// Given two arrays of integers
+// Find common elements
 
-function findUnion(ar1, ar2) {
+function findUnion(array1, array2) {
     let result = []
-    ar1.forEach(function(elem1) {
-        ar2.forEach(function(elem2, j) {
-            if (elem1 == elem2 && result.indexOf(elem1) == -1) {
-                result.push(elem1)
-                ar2.splice(j, 1)
+    array1.forEach(elem => {
+        for (let j = 0; j < array2.length; j++) {
+            if (elem == array2[j] && result.indexOf(elem) == -1) {
+                result.push(elem)
+                array2.splice(j, 1) // no need this elem in further iteratins
+                break
             }
-        })
+        }
     })
     return result
 }

@@ -1,9 +1,9 @@
-// Напишите функцию, принимающую на вход время (в любом формате)
-// и возвращающую угол между стрелками аналоговых часов.
+// Write a function that accepts time (in any format)
+// and which returns angle between arrows
 
 let assert = require("chai").assert;
-let timeToAngle = require('./index')
-describe.only('Convert time to angle between watch arrows:', function() {
+let timeToAngle = require('./time-to-arrows-angle')
+describe('Convert time to angle between watch arrows:', function() {
     it('time is 0:00, angle = 0', function() {
         let time = '0:00'
         assert.equal(timeToAngle(time), 0)

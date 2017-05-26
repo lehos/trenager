@@ -1,10 +1,11 @@
-// Напишите функцию, принимающую массив произвольных слов и на выходе дающую двумерный массив анаграмм:
+// Write a function which accepts array of any words and returns two-dimensional array with anagrams:
 // ['стол', 'барокко', слот', 'кот', 'кошка', 'ток', 'коробка']
 // ->
 // [['стол', 'слот'], ['кот', 'ток'], ['барокко', 'коробка']]
 
 function arrayAnagram(arr) {
     let result = []
+    // helper array where each elem is sorted, so anagram elems are equal here
     let sorted = arr.map(elem => elem.split('').sort().join(''))
     //storage for second anagram indexes, to exclude them in next iterations
     let trash = []
