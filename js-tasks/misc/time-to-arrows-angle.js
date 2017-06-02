@@ -4,7 +4,7 @@
 /**
  * accepted delimiters:
  * ':', '.', ',', '-'
- * @param time
+ * @param time (10:30, 12.45, 1-20)
  * @returns {number, string}
  */
 function timeToAngle(time) {
