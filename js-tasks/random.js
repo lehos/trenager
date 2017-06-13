@@ -1,7 +1,7 @@
 /**
  * returns random number between given min & max
- * @param number min 
- * @param number max 
+ * @param {Number} min
+ * @param {Number} max
  */
 function random(min, max) {
     return min + Math.random() * (max - min)
@@ -10,8 +10,8 @@ function random(min, max) {
 
 /**
  * returns random integer between given min & max
- * @param number min 
- * @param number max 
+ * @param {Number} min
+ * @param {Number} max
  */
 function randomInt(min, max) {
     return Math.floor(min + Math.random() * (max - min + 1))
