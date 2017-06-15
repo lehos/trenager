@@ -64,6 +64,7 @@ function findPrimes(n = 100) {
     return {primes, count: primes.length, sum}
 }
 
+
 function isPrime(n) {
     let divisor = 3
     let limit = Math.sqrt(n)

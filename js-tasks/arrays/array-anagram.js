@@ -11,7 +11,7 @@ function arrayAnagram(arr) {
     let trash = []
 
     arr.forEach((elem, i) => {
-        if (trash.indexOf(i) != -1) {
+        if (~trash.indexOf(i)) {
             return
         }
 
@@ -19,7 +19,7 @@ function arrayAnagram(arr) {
         let j = sorted.indexOf(sorted[i], i + 1)
 
         // if there is no anagram - quit
-        if (j == -1) {
+        if (j === -1) {
             return
         }
 

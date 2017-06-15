@@ -4,8 +4,8 @@
 /**
  * accepted delimiters:
  * ':', '.', ',', '-'
- * @param time (10:30, 12.45, 1-20)
- * @returns {number, string}
+ * @param {string} time (10:30, 12.45, 1-20)
+ * @returns {number}
  */
 function timeToAngle(time) {
     let formatCheck = /^([0-9]|0[0-9]|1[0-9]|2[0-3])[:|.|,|-][0-5][0-9]$/
