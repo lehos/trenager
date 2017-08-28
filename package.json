@@ -4,13 +4,13 @@
   "description": "placeholder for any sort of tasks, tip and tricks, how-to's algorithm implementation etc",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec --recursive js-tasks"
+    "test": "./node_modules/.bin/mocha --reporter spec --recursive src"
   },
   "license": "WTFPL",
   "author": "https://github.com/lehos/",
   "repository": "https://github.com/lehos/trenager",
   "devDependencies": {
-    "mocha": "^3.1.0",
-    "chai": "^3.5.0"
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
   }
 }
