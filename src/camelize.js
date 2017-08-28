@@ -4,17 +4,15 @@
  */
 function camelize(str) {
     let parts = str.split('-')
-    parts.forEach((part, index) => {
+    return parts.map((word, index) => {
         if (index === 0) {
-            return
+            return word
         }
-
-        let upped = part.charAt(0).toUpperCase()    // 'S'
-        let chars = part.split('')                  // ['s', 'h', 'o', 'r', 't' ]
+        let upped = word.charAt(0).toUpperCase()    // 'S'
+        let chars = word.split('')                  // ['s', 'h', 'o', 'r', 't' ]
         chars.splice(0, 1, upped)                   // ['S', 'h', 'o', 'r', 't' ]
-        parts[index] = chars.join('')               // 'Short'
-    })
-    return parts.join('')
+        return chars.join('')                       // 'Short'
+    }).join('')
 }
 
 module.exports = camelize
